@@ -1,0 +1,50 @@
+*{
+margin:0px;
+padding:0px;
+outline:0px;
+}
+.conatiner{
+    background:url('https://i.pinimg.com/originals/c8/ab/c8/c8abc8d040b09bf0ae0fb7bb3bd17672.jpg');
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    position: relative;
+}
+.sign-in{
+    position:absolute;
+    top:15%;
+    left:5%;
+    height:60%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 4px 3px rgb(22, 1, 1);
+}
+.sign-in h1{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(244, 249, 151);
+    text-shadow:5px 0px 8px black;
+}
+.sign-in input{
+    height:40px;
+    width:250Px;
+    font: size 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:10px;
+    border-radius:0.8rem;
+}
+.sign-in button{
+    height:30px;
+    width:120px;
+    font-size:20px;
+    font-weight: bolder;
+    border-radius:2rem;
+    background-color: black;
+    color:white;
+}
+

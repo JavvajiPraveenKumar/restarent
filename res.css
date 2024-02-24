@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline:0px;
+}
+#background{
+    height:100vh;
+    width:100%;
+    position: relative;
+    
+}
+
+#background img{
+    height:100%;
+    width:100%;
+    background-attachment: fixed;
+}
+#backgd{
+    background-attachment: fixed;
+}
+.bg{
+    background-color:black;
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top:0px;
+    opacity:0.7;
+}
+#nav{
+    position:absolute;
+    top:0px;    
+    height:100px;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height:100%;
+    width:100px;
+    padding:4px;
+    border-radius:70%;
+}
+.logo img{
+    height:100%;
+    width:100%;
+}
+.options{
+    width:85%;
+    display: flex;
+    justify-content: space-evenly;
+    color:aliceblue;
+}
+.options p{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.threelines i{
+    font-size:25px;
+    color:white;
+    display:none;
+
+}
+.option{
+    position:absolute;
+    top:5px;
+    height:100%;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    display:none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    
+
+}
+.caption{
+    height:200px;
+    width:400px;
+    position: absolute;
+    top:40%;
+    left:10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+.caption p{
+    font-style: italic;
+    font-weight: bold;
+    font-size:20px;
+    color: rgb(246, 250, 3);
+    padding:3px;
+}
+.caption h1{
+    color: white;
+    font-weight:bolder;
+    text-shadow:0px 0px 10px black;
+}
+.caption button{
+    height:40px;
+    width:120px;
+    background-color: rgb(6, 6, 191);
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:2rem;
+    padding:2px;
+}
+
+@media screen and (max-width:500px){
+    .options{
+        display:none;
+    }
+    .threelines i{
+        display: flex;
+    }
+    .threelines i:hover option{
+        display: flex;
+    }
+}
+/*********************************---menu----******************************************/
+#menu-card,#special-dishes ,.accordian>h1{
+    color:rgb(2, 63, 56);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(249, 195, 126);
+    padding:2px;
+    text-shadow:1px 1px 2px rgb(152, 237, 244);
+    font-family:cursive;
+}
+#menu-card i,#special-dishes i{
+ font-size: 30px;
+ padding:4px;
+
+}
+.menu{
+    height:auto;
+    width:100%;
+    background-color: rgb(249, 195, 126);
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image{
+    height:60%;
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition:all linear 20s;
+    border-radius:2rem;
+}
+
+.image img{
+    height:100%;
+    width:100%;
+    border-radius:2rem;
+}
+.image img:hover{
+    height:110%;
+    width:110%;
+  
+}
+.container{
+    height:300px;
+    width:240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow:0px 0px 5px 2px black;
+    padding:2px;
+    margin:15px;
+    border-radius:1rem;
+    background-color: rgb(227, 209, 182);
+}
+.menu-options{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px;
+}
+.menu-options button{
+ color:white;
+ background-color: rgb(47, 92, 2);
+ width:50px;
+ font-weight: bold;
+
+}
+/*************************-------about---**************************************/
+#special-dishes{
+    background-color: rgb(4, 151, 224);
+    color:black;
+    font-size:21px;
+   
+}
+.special-dishes{
+    height:auto;
+    width:100%;
+    background-color: rgb(4, 151, 224);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dish{
+    height:60vh;
+    width:90%;
+    box-shadow:0px 0px 7px 1px black;
+    margin-bottom:20px;
+    background-color: rgb(4, 151, 224);
+    display: flex;
+}
+.content{
+    width:50%;
+    height:100%;
+    background-color: rgb(167, 212, 240);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:40px;
+}
+.dish-image{
+    background-color: rgb(167, 212, 240);
+    height:100%;
+    width:50%; 
+    box-sizing: border-box;
+    border-top-right-radius:30%;
+}
+.dish-image img{
+    height: 100%;
+    width:100%;
+    border-bottom-left-radius:30%;
+    border-top-left-radius:30%;
+}
+.content h3{
+    font-size:35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.content p{
+    font-size:19px;
+    font-weight: 400;
+
+}
+/***************************accordian *************************************/
+.accordian>h1{
+    background-color: rgb(45, 41, 41);
+    color:white;
+}
+.accordian-main{
+    background-color: rgb(41, 40, 40);
+    padding-bottom:30px;
+
+}
+.accordian{
+    height:auto;
+    width:70%;
+    margin-left:15%;
+}
+.heading{
+    height:50px;
+    font-size:15px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding:30px;
+    box-sizing: border-box;
+    border:0.5px solid red;
+
+}
+.heading i{
+    font-size:25px;
+}
+.desc{
+    display: none;
+
+}
